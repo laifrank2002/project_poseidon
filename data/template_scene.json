@@ -1,0 +1,39 @@
+{
+	"name": "template_scene",
+	"title": "Template Scene",
+	"scenes": 
+	{
+		"start": 
+		{
+			"text": ["You find yourself in a testing environment and you see two paths..."],
+			"choices": [
+				{
+					"choice": "Take the first path.",
+					"result": {"test":1}
+				},
+				{
+					"choice": "Take the second.",
+					"result": {"end":1}
+				}
+			]
+		},
+		
+		"test":
+		{
+			"text": ["You turn the first path and find yourself in a dead end."],
+			"choices": [
+				{
+					"choice": "There's no choice now...",
+					"result": {"end":1}
+				}
+			]
+		},
+		
+		"end": 
+		{
+			"text": ["You can no longer avoid it. The end is here."],
+			"choices": [
+			]
+		}
+	}
+}

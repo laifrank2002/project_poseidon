@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type ="text/css" href="css/style.css"/>
+</head>
+<body>
+	<!-- Imported scripts -->
+	<!-- https://unpkg.com/delaunator@4.0.1/delaunator.min.js -->
+	<script src="script/delaunator.min.js"></script>
+	<!-- For da tests, we'll pretend these don't exist. -->
+	<script src="script/engine.js"></script>
+	<script src="script/uielement.js"></script>
+	<script src="script/uihandler.js"></script>
+	<script src="script/state_manager.js"></script>
+	<!-- Business Logic -->
+	<script src="script/map.js"></script>
+	<script src="script/cannonball.js"></script>
+	<script src="script/particle.js"></script>
+	<script src="script/ship.js"></script>
+	<script src="script/game.js"></script>
+	<!-- TESTS! -->
+	<script src="script/tests.js"></script>
+	
+	
+	<script>
+		var images = {
+			"landscape1": create_image("assets/landscape1.png"),
+			"testmap1": create_image("assets/testmap1.png"),
+			"testship": create_image("assets/testship.png"),
+			"testship2": create_image("assets/testship2.png"),
+		}
+		
+		window.onload = function()
+		{
+			Engine.initialize();
+		}
+	</script>
+</body>
+</html>
